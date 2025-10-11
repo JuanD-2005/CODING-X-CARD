@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://du2cag7m0tcbc"]
+
+[ext_resource type="Script" uid="uid://cq1xsk1rerbbr" path="res://Scrips/main_cards.gd" id="1_qp02c"]
+[ext_resource type="Texture2D" uid="uid://b1r44uw04nko" path="res://Sprites/Default.png" id="1_wl1f3"]
+[ext_resource type="FontFile" uid="uid://x2yiab6wdp1k" path="res://rainyhearts/rainyhearts.ttf" id="2_1peji"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ocqiv"]
+size = Vector2(82, 140)
+
+[sub_resource type="LabelSettings" id="LabelSettings_twd4b"]
+font = ExtResource("2_1peji")
+font_size = 25
+shadow_size = 0
+shadow_offset = Vector2(0, 0)
+
+[node name="MainCards" type="Node2D"]
+script = ExtResource("1_qp02c")
+
+[node name="CardSprite" type="Sprite2D" parent="."]
+position = Vector2(3.57628e-07, 0)
+scale = Vector2(1.478, 1.478)
+texture = ExtResource("1_wl1f3")
+
+[node name="Area2D" type="Area2D" parent="CardSprite"]
+scale = Vector2(0.67659, 0.67659)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CardSprite/Area2D"]
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_ocqiv")
+
+[node name="NumberLbl" type="Label" parent="CardSprite"]
+offset_left = -18.2679
+offset_top = -19.6211
+offset_right = 18.7321
+offset_bottom = 17.3789
+label_settings = SubResource("LabelSettings_twd4b")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="input_event" from="CardSprite/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="CardSprite/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="CardSprite/Area2D" to="." method="_on_area_2d_mouse_exited"]

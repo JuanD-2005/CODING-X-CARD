@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8xuuyhik621u"]
+
+[ext_resource type="Script" uid="uid://bcheuf2tmyioo" path="res://Escenas/game_over.gd" id="1_kvcro"]
+[ext_resource type="VideoStream" uid="uid://ch5o1y1ve2ajk" path="res://Menus/scenes/Fondo.ogv" id="2_k3xhv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mvftc"]
+font_size = 85
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0.266575, 0.266575, 0.266575, 0)
+shadow_offset = Vector2(35, 24)
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_kvcro")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 2560.0
+offset_bottom = 1440.0
+stream = ExtResource("2_k3xhv")
+autoplay = true
+loop = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 498.0
+offset_top = 412.0
+offset_right = 622.0
+offset_bottom = 443.0
+scale = Vector2(1.75998, 1.75998)
+text = "Volver al Menú"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 356.0
+offset_top = 249.0
+offset_right = 843.0
+offset_bottom = 365.0
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_mvftc")
+
+[node name="Timer" type="Timer" parent="."]

@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://ced282v4uyw8r"]
+
+[ext_resource type="VideoStream" uid="uid://nyad0dxwxako" path="res://red-skull-glitch-moewalls-com.ogv" id="1_o6d44"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.00694444
+anchor_right = 0.993056
+anchor_bottom = 1.0
+offset_top = -163.0
+offset_right = 224.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.844305, 0.867651)
+stream = ExtResource("1_o6d44")
+autoplay = true
+loop = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 503.0
+offset_right = 40.0
+offset_bottom = 543.0
+scale = Vector2(28.76, 3.6)
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -368.0
+offset_top = 24.0
+offset_right = -328.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(17.9982, 4.12731)
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Jugar"

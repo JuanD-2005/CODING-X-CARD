@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://kgwd8gu387hp"]
+
+[ext_resource type="Script" uid="uid://hvsigiwg1glc" path="res://Scenes/Chat.gd" id="1_0e3wj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1151.0
+offset_bottom = 647.0
+script = ExtResource("1_0e3wj")
+
+[node name="ChatDisplay" type="TextEdit" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 155.0
+
+[node name="ChatInput" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 157.0
+offset_right = 1059.0
+offset_bottom = 188.0
+
+[node name="SendButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 157.0
+offset_right = 1149.0
+offset_bottom = 188.0
+text = "Send"
+
+[connection signal="text_submitted" from="ChatInput" to="." method="_on_chat_input_text_submitted"]
+[connection signal="pressed" from="SendButton" to="." method="_on_send_button_pressed"]

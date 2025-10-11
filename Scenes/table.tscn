@@ -1,0 +1,94 @@
+[gd_scene load_steps=9 format=3 uid="uid://ck2nrw7us0l4u"]
+
+[ext_resource type="Script" uid="uid://dp5lsogllby5k" path="res://Scrips/game_table.gd" id="1_s0vfs"]
+[ext_resource type="PackedScene" uid="uid://mu7qxvg2810o" path="res://Scenes/hand.tscn" id="2_y7q4d"]
+[ext_resource type="Texture2D" uid="uid://b1r44uw04nko" path="res://Sprites/Default.png" id="3_0of4d"]
+[ext_resource type="VideoStream" uid="uid://ddrxjfcptmth1" path="res://Sprites/FOndouu.ogv" id="4_5em5d"]
+[ext_resource type="Texture2D" uid="uid://bojnv64fm5sru" path="res://Sprites/pixil-frame-0 (1).png" id="4_mqhur"]
+[ext_resource type="AudioStream" uid="uid://bvap7f5ujxpam" path="res://Audio/kid-games-music-comedy-situation-soundtrack-play-arcade-283659.ogg" id="6_42xid"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5ey8"]
+size = Vector2(54.1272, 94.7226)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2yp7"]
+size = Vector2(81, 140)
+
+[node name="Table" type="Node2D"]
+script = ExtResource("1_s0vfs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Hand" parent="CanvasLayer" instance=ExtResource("2_y7q4d")]
+position = Vector2(575, 1531)
+
+[node name="Deck" type="Node2D" parent="CanvasLayer"]
+position = Vector2(0, -13)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Deck"]
+position = Vector2(663, 328)
+scale = Vector2(1.478, 1.478)
+texture = ExtResource("3_0of4d")
+
+[node name="Area2D" type="Area2D" parent="CanvasLayer/Deck/Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Deck/Sprite2D/Area2D"]
+shape = SubResource("RectangleShape2D_q5ey8")
+
+[node name="Discard" type="Node2D" parent="CanvasLayer"]
+
+[node name="Area2D" type="Area2D" parent="CanvasLayer/Discard"]
+position = Vector2(496, 315)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Discard/Area2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_j2yp7")
+
+[node name="Indicadores" type="Node2D" parent="CanvasLayer"]
+
+[node name="Indicador" type="Sprite2D" parent="CanvasLayer/Indicadores"]
+position = Vector2(580, 436)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_mqhur")
+
+[node name="Indicador2" type="Sprite2D" parent="CanvasLayer/Indicadores"]
+position = Vector2(580, 207)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_mqhur")
+
+[node name="Indicador3" type="Sprite2D" parent="CanvasLayer/Indicadores"]
+visible = false
+position = Vector2(939, 322)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_mqhur")
+
+[node name="Indicador4" type="Sprite2D" parent="CanvasLayer/Indicadores"]
+visible = false
+position = Vector2(207, 327)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_mqhur")
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 96.0
+offset_bottom = 23.0
+text = "Salir al menu principal"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Sprite2D"]
+offset_left = -150.0
+offset_top = -49.0
+offset_right = 1286.0
+offset_bottom = 798.0
+mouse_filter = 2
+stream = ExtResource("4_5em5d")
+expand = true
+loop = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_42xid")
+autoplay = true
+
+[connection signal="input_event" from="CanvasLayer/Deck/Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="area_entered" from="CanvasLayer/Discard/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="CanvasLayer/Discard/Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

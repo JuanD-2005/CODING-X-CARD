@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c4glxfj0yhnqd"]
+
+[node name="FinDeJuego" type="Node2D"]
+
+[node name="Container" type="Container" parent="."]
+offset_left = 363.0
+offset_top = 155.0
+offset_right = 403.0
+offset_bottom = 195.0
+scale = Vector2(9.67738, 9.67738)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Container"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[color=red][font_size=10][shake rate=20.0 level=5 connected=1]GAME OVER[/shake][/font_size][/color]"
+scroll_active = false

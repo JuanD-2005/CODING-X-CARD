@@ -1,0 +1,43 @@
+[gd_scene load_steps=9 format=3 uid="uid://b7aw51k5vpnq7"]
+
+[ext_resource type="PackedScene" uid="uid://cqhw4yx5al1x6" path="res://Modelos/Pared/wall.glb" id="1_ighnr"]
+[ext_resource type="Texture2D" uid="uid://dp470y3s217yf" path="res://Texturas/metal_plate_diff_4k.jpg" id="2_xac5b"]
+[ext_resource type="PackedScene" uid="uid://bhfwsmuobudlg" path="res://Modelos/Pared/column.glb" id="3_jj0f5"]
+[ext_resource type="Texture2D" uid="uid://dm4akyqaa3yy8" path="res://Texturas/metal_grate_rusty_diff_4k.jpg" id="4_jam1c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibf3b"]
+albedo_texture = ExtResource("2_xac5b")
+uv1_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gc2qd"]
+points = PackedVector3Array(-0.494913, 0.00518536, -0.3, 0.481787, 0.981766, 0.25, 0.487944, 0.987922, -0.25, 0.494913, 0.00518536, -0.3, -0.507937, 0.166757, 0.311111, -0.487944, 0.987826, -0.25, 0.489703, 0.0103944, 0.3, -0.481899, 0.981783, 0.25, -0.489703, 0.0103944, 0.3, 0.507937, 0.166757, -0.307936, 0.507937, 0.166757, 0.311111, -0.507937, 0.166757, -0.307936)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fsxtf"]
+albedo_color = Color(0.683077, 0.683077, 0.683077, 1)
+albedo_texture = ExtResource("4_jam1c")
+uv1_triplanar = true
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0pcfs"]
+points = PackedVector3Array(-0.100975, 0.849063, -0.354917, 0.0247315, 0.981983, 0.356274, -0.020467, 0.983542, 0.35742, -0.141681, 0.0155095, 0.25199, 0.28052, 0.0187227, -0.0353379, 0.357431, 0.983556, -0.0204237, -0.353362, 0.984016, -0.035621, -0.24253, 0.0254589, -0.15357, 0.146888, 0.0125802, -0.249212, 0.145296, 0.0179442, 0.250804, 0.189934, 0.980615, -0.305772, -0.323179, 0.849063, 0.200518, 0.327512, 0.849063, 0.184671, -0.275359, 0.0200264, 0.0545751, 0.327512, 0.849063, -0.196159, -0.308512, 0.984851, -0.187288, -0.0646392, 0.0247677, -0.272659, 0.177813, 0.988622, 0.315261, -0.0216014, 0.849063, 0.375195, 0.0417809, 0.849063, -0.370836, -0.370788, 0.849063, -0.0374736, -0.196122, 0.849063, 0.327509, -0.196122, 0.849063, -0.323151, 0.250817, 0.0179358, 0.145283, 0.375195, 0.849063, 0.0259128, -0.14228, 0.986508, -0.324802, 0.200529, 0.849063, -0.323151, 0.184683, 0.849063, 0.327509, -0.305789, 0.980602, 0.189918, -0.323179, 0.849063, -0.196232, -0.249251, 0.0124262, 0.146849, 0.0395752, 0.0205585, 0.279383)
+
+[node name="wall2" instance=ExtResource("1_ighnr")]
+
+[node name="wall" parent="." index="0"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_ibf3b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall" index="0"]
+shape = SubResource("ConvexPolygonShape3D_gc2qd")
+
+[node name="column2" parent="." index="1" instance=ExtResource("3_jj0f5")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.105693, 1.11375)
+
+[node name="column" parent="column2" index="0"]
+transform = Transform3D(0.693473, 0, 0, 0, 0.997795, 0, 0, 0, 0.798344, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_fsxtf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="column2" index="1"]
+transform = Transform3D(0.693473, 0, 0, 0, 0.997795, 0, 0, 0, 0.798344, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_0pcfs")
+
+[editable path="column2"]

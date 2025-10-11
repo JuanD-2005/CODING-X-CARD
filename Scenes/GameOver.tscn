@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpn7srn4ftx6m"]
+
+[ext_resource type="Script" uid="uid://33jwnqpwg7d" path="res://Scenes/game_over.gd" id="1_ij76o"]
+[ext_resource type="Texture2D" uid="uid://c5f815ceguakd" path="res://Sprites/Frames Game Over/pixil-layer-0.png" id="2_nj7ll"]
+[ext_resource type="Texture2D" uid="uid://bnxq034vuf2m7" path="res://Sprites/Frames Game Over/pixil-layer-1.png" id="3_5axng"]
+[ext_resource type="Texture2D" uid="uid://cfvh5og2sf7yw" path="res://Sprites/Frames Game Over/pixil-layer-2.png" id="4_1jga1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgxna"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nj7ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5axng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1jga1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ij76o")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1153.0
+offset_bottom = 647.0
+color = Color(0.956863, 0.00392157, 0.0862745, 0.545098)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(546, 304)
+scale = Vector2(2.83, 2.77)
+sprite_frames = SubResource("SpriteFrames_sgxna")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 502.0
+offset_top = 414.0
+offset_right = 628.0
+offset_bottom = 450.0
+text = "Salir"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

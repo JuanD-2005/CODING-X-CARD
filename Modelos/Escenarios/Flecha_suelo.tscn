@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=4 uid="uid://dqigqeujpe7xq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ffjks"]
+resource_name = "colormap"
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 0.117647, 1)
+emission_enabled = true
+emission = Color(1, 1, 0.117647, 1)
+emission_energy_multiplier = 1.63
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rc56i"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"format": 34359742465,
+"index_count": 45,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAAAEAAMABAAAAAUAAwAEAAYABgAEAAcABwAEAAgACQAKAAsACwAKAAwACQANAAoADgAMAAoADQAJAA8ADgAQAAwAEAAPAAkADwAQAA4A"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("vw6cJgAAAADNzEw9zcxMPgAAAADNzEy9zcxMPgAAAADNzEw9NBE2pwAAAADNzEy9zcxMvQAAAACamRk++Q+pJwAAAACamRk+5BTdpwAAAACamRm+zcxMvQAAAACamRm+zcxMvgAAAABZF/cnzczMPgAAAADNzMw+AAAAvwAAAAAAAAA/zczMvgAAAADNzMw+zczMvgAAAADNzMy+AAAAPwAAAAAAAAA/AAAAvwAAAAAAAAC/AAAAPwAAAAAAAAC/zczMPgAAAADNzMy+")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r38eo"]
+resource_name = "Scene"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
+"attribute_data": PackedByteArray("AACQPgAAID8AAJA+AAAgPwAAkD4AACA/AACQPgAAID8AAJA+AAAgPwAAkD4AACA/AACQPgAAID8AAJA+AAAgPwAAkD4AACA/AACQPgAAID8AAJA+AAAgPwAAkD4AACA/AACQPgAAID8AAJA+AAAgPwAAkD4AACA/AACQPgAAID8AAJA+AAAgPw=="),
+"format": 34359742487,
+"index_count": 45,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAAAEAAMABAAAAAUAAwAEAAYABgAEAAcABwAEAAgACQAKAAsACwAKAAwACQANAAoADgAMAAoADQAJAA8ADgAQAAwAEAAPAAkADwAQAA4A"),
+"material": SubResource("StandardMaterial3D_ffjks"),
+"name": "colormap",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("vw6cJgAAAADNzEw9zcxMPgAAAADNzEy9zcxMPgAAAADNzEw9NBE2pwAAAADNzEy9zcxMvQAAAACamRk++Q+pJwAAAACamRk+5BTdpwAAAACamRm+zcxMvQAAAACamRm+zcxMvgAAAABZF/cnzczMPgAAAADNzMw+AAAAvwAAAAAAAAA/zczMvgAAAADNzMw+zczMvgAAAADNzMy+AAAAPwAAAAAAAAA/AAAAvwAAAAAAAAC/AAAAPwAAAAAAAAC/zczMPgAAAADNzMy+/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rc56i")
+
+[node name="Piso_Luminoso_Flecha" type="Node3D"]
+
+[node name="indicator-special-arrow" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_r38eo")
+skeleton = NodePath("")

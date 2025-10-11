@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://mu7qxvg2810o"]
+
+[ext_resource type="Script" uid="uid://o2rp4swriwxt" path="res://Scrips/Hand.gd" id="1_uven4"]
+[ext_resource type="PackedScene" uid="uid://du2cag7m0tcbc" path="res://Scenes/Cards/main_cards.tscn" id="2_6di2h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4646j"]
+radius = 1000.0
+
+[node name="Hand" type="Node2D"]
+script = ExtResource("1_uven4")
+MCSA = 4.0
+
+[node name="MainCards" parent="." instance=ExtResource("2_6di2h")]
+position = Vector2(0, 1000)
+rotation = 3.14159
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CardCollision" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_4646j")
