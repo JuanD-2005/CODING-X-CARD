@@ -1,47 +1,122 @@
-# 🃏 CARD-POCALIPSIS V1
+# CARD-POCALIPSIS
 
-**CARD-POCALIPSIS V1** es un proyecto desarrollado desde cero en **Godot Engine**, que combina dos experiencias en un mismo juego:
+CARD-POCALIPSIS no es lo que parece. Lo que comienza como una partida de cartas 2D por turnos (inspirada en el clasico UNO), se transforma en una experiencia de exploracion y plataformas 3D en primera persona.
 
-- 🎴 **Modo 2D de cartas**, inspirado en UNO, con mecánicas de turnos y cartas de acción.  
-- 🕹️ **Modo 3D de plataformas en primera persona**, con físicas, obstáculos y exploración.
-
-Todo el proyecto fue diseñado y codificado manualmente desde cero, incluyendo scripts, escenas y assets.
+Un proyecto que mezcla dos universos en un solo motor.
 
 ---
 
-## 🚀 Estructura del proyecto
- ```
-CARD-POCALIPSIS-V1/
-├── .godot/             # Configuración interna de Godot
-├── Audio/              # Música y efectos de sonido
-├── Escenas/            # Escenas del juego 2D
-├── Menus/              # Menús y UI del juego
-├── Modelos/            # Modelos 3D del juego
-├── rainyhearts/        # Assets específicos del proyecto
-├── Scenes/             # Escenas adicionales (3D FPS)
-├── Scrips/             # Scripts GDScript
-├── Shaders/            # Shaders personalizados
-├── Sprites/            # Sprites para el modo 2D
-├── Texturas/           # Texturas usadas en el juego
-├── .gitignore
-├── .gitattributes
-├── project.godot       # Archivo principal de Godot
-├── enemigo.gd          # Script del enemigo
-├── player.gd           # Script del jugador
-├── zombie.gd           # Script de enemigos zombies
-└── ... otros assets multimedia y shaders
- ```
-yaml
-Copiar código
+## Espanol
 
-> 🔹 Nota: `.uid` y `.import` son archivos de Godot que gestionan la importación de assets y no requieren edición manual.
+### Resumen
+Creado desde cero en Godot 4.4, este titulo indie/academico nace como un experimento para dominar la transicion entre entornos de interfaz 2D y espacios tridimensionales. Integra logica de juegos de mesa clasicos con mecanicas de movimiento en primera persona.
 
-## 🕹️ Cómo ejecutar
+### Caracteristicas principales
+- El giro (The Twist): transicion de un sistema de cartas por turnos en 2D a un entorno de exploracion 3D.
+- Logica de cartas: sistema de turnos y reglas base implementadas en GDScript.
+- Mecanicas 3D: movimiento en primera persona, incluyendo salto, sprint e interaccion.
+- Audiovisuales personalizados: shaders propios, transiciones, menus interactivos y diseno de sonido.
+- Arquitectura limpia: estructura modular del proyecto para facilitar mantenimiento y escalabilidad.
 
-### 1. Desde Godot
+### Tecnologias y herramientas
+- Motor: Godot Engine 4.4 (GL Compatibility).
+- Lenguaje: GDScript.
+- Recursos: sprites 2D, modelos 3D, audio y shaders personalizados.
+
+### Proposito del proyecto
+Este juego fue desarrollado de forma colaborativa junto a un companero como proyecto de aprendizaje intensivo. El objetivo principal fue dominar Godot, reforzar programacion orientada a objetos en GDScript y resolver el desafio tecnico de combinar dos generos de videojuegos radicalmente distintos en una misma ejecucion.
+
+### Como ejecutar (local)
 1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
-Abre Godot Engine y selecciona project.godot.
-Pulsa Play ▶️ para iniciar el juego.
- ```
+
+```bash
+git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
+```
+
+2. Abre Godot Engine (version 4.4 o superior).
+3. Importa el proyecto seleccionando `project.godot`.
+4. Presiona Play para iniciar.
+
+### Estructura del repositorio
+```text
+CARD-POCALIPSIS/
+├── Audio/        # Musica y efectos de sonido
+├── Escenas/      # Nivel principal y transiciones
+├── Menus/        # Interfaz de usuario y menus
+├── Modelos/      # Modelos 3D del entorno
+├── rainyhearts/  # Fuentes tipograficas
+├── Scenes/       # Escenas secundarias/prefabs
+├── Scrips/       # Logica del juego en GDScript
+├── Shaders/      # Shaders personalizados
+├── Sprites/      # Recursos graficos 2D (cartas y UI)
+├── Texturas/     # Materiales para el entorno 3D
+└── project.godot # Configuracion raiz del motor
+```
+
+### Controles base
+- Movimiento: `W`, `A`, `S`, `D`
+- Salto: `Space`
+- Sprint: `Shift`
+- Interactuar: `E`
+- Pausa: `Esc`
+- Seleccionar carta/accion: `Click izquierdo`
+
+Nota: los archivos `.import` y `.uid` son generados por Godot y normalmente no requieren edicion manual.
+
+---
+
+## English
+
+### Overview
+CARD-POCALIPSIS is not what it seems. What starts as a calm, turn-based 2D card game (inspired by classic UNO) abruptly shifts into a first-person 3D exploration and platforming experience.
+
+Built from scratch in Godot 4.4, this indie/academic title was created as an experiment to master the transition between 2D UI environments and 3D spaces.
+
+### Key features
+- The Twist: transition from a 2D turn-based card system to a 3D exploration environment.
+- Card logic: turn-based system and core rules implemented in GDScript.
+- 3D mechanics: first-person movement, including jumping, sprinting, and interaction.
+- Custom audiovisuals: custom shaders, transitions, interactive menus, and sound design.
+- Clean architecture: modular structure separating scenes, scripts, shaders, and assets.
+
+### Tech stack
+- Engine: Godot Engine 4.4 (GL Compatibility).
+- Language: GDScript.
+- Assets: 2D sprites, 3D models, audio, and custom shaders.
+
+### Project purpose
+This game was developed collaboratively with a partner as an intensive learning project. The main goal was to master Godot, strengthen object-oriented programming in GDScript, and solve the technical challenge of blending two radically different genres in a single executable.
+
+### Run locally
+1. Clone the repository:
+
+```bash
+git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
+```
+
+2. Open Godot Engine (version 4.4 or newer).
+3. Import the project by selecting `project.godot`.
+4. Press Play to start.
+
+### Base controls
+- Move: `W`, `A`, `S`, `D`
+- Jump: `Space`
+- Sprint: `Shift`
+- Interact: `E`
+- Pause: `Esc`
+- Select card/action: `Left mouse click`
+
+Note: `.import` and `.uid` files are generated by Godot and usually should not be edited manually.
+
+---
+
+## Estado del proyecto / Project status
+
+En desarrollo activo. Se siguen ajustando mecanicas, flujo de juego y pulido visual.
+
+Actively developed. Gameplay, flow, and visual polish are currently being refined.
+
+## Autores / Authors
+
+- JuanD-2005
+- JoseABravoD
