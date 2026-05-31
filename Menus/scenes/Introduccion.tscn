@@ -1,5 +1,6 @@
-[gd_scene load_steps=115 format=3 uid="uid://qqxjy52v6h1f"]
+[gd_scene load_steps=132 format=3 uid="uid://qqxjy52v6h1f"]
 
+[ext_resource type="Script" uid="uid://cuhqfr46j5gk3" path="res://Menus/scenes/introduccion.gd" id="1_732c3"]
 [ext_resource type="PackedScene" uid="uid://pd8rqaua5a87" path="res://Modelos/Escenarios/Trans_Animacion.tscn" id="1_i7dk7"]
 [ext_resource type="Texture2D" uid="uid://dis83acn77381" path="res://Texturas/bitumen_diff_4k.jpg" id="1_j0sh0"]
 [ext_resource type="PackedScene" uid="uid://bjb4qr2cxjcgp" path="res://Shaders/shadre.tscn" id="1_smxgq"]
@@ -12,12 +13,14 @@
 [ext_resource type="PackedScene" uid="uid://l8xe8p2npqt5" path="res://Modelos/Escenarios/indicator-special-arrow.fbx" id="9_3ps8e"]
 [ext_resource type="Texture2D" uid="uid://dp470y3s217yf" path="res://Texturas/metal_plate_diff_4k.jpg" id="9_54um5"]
 [ext_resource type="Script" uid="uid://cg8liwlg5xbmk" path="res://Menus/scenes/Palanca.gd" id="10_eaowo"]
+[ext_resource type="PackedScene" uid="uid://b31bkp65tlmia" path="res://Texturas/3D RightArrow.fbx" id="10_kenya"]
 [ext_resource type="Script" uid="uid://c4wsafddk76x5" path="res://Menus/scenes/lava.gd" id="10_m4n6i"]
 [ext_resource type="Script" uid="uid://7rawxnohjjr2" path="res://Menus/scenes/Activador_Dos.gd" id="11_7gr0v"]
 [ext_resource type="PackedScene" uid="uid://dn0bnil0ny704" path="res://Modelos/Escenarios/Palanca.tscn" id="12_0hc3m"]
 [ext_resource type="Shader" uid="uid://bg7f3vkoet7e1" path="res://Menus/scenes/Introduccion.tres" id="13_vmxrf"]
 [ext_resource type="Script" uid="uid://hc4w5oc0qo7u" path="res://Menus/scenes/activador_lava.gd" id="13_vtvah"]
 [ext_resource type="Texture2D" uid="uid://bdk0k885tto7v" path="res://Texturas/Metal054C_2K-JPG/Metal054C_2K-JPG_Color.jpg" id="14_dbw2q"]
+[ext_resource type="PackedScene" uid="uid://ctcvhkrf06lfd" path="res://Texturas/terraria_-_terrablade.glb" id="14_mxile"]
 [ext_resource type="Texture2D" uid="uid://crkcgfa18m618" path="res://Texturas/Metal054C_2K-JPG/Metal054C_2K-JPG_Metalness.jpg" id="15_b3jfj"]
 [ext_resource type="PackedScene" uid="uid://26kl2emk16li" path="res://Modelos/indicator-special-cross.fbx" id="15_o38dm"]
 [ext_resource type="Script" uid="uid://r1ayexbmlyd4" path="res://Menus/scenes/llave_lava.gd" id="15_tahjw"]
@@ -27,17 +30,31 @@
 [ext_resource type="PackedScene" uid="uid://dssdk487oaiul" path="res://Modelos/weapon-sword.fbx" id="17_ci2gb"]
 [ext_resource type="Texture2D" uid="uid://c5ws2yt01s6oh" path="res://Texturas/Rock031_2K-JPG_Color.jpg" id="19_hktnt"]
 [ext_resource type="Shader" uid="uid://d0mxoytotbfrs" path="res://Menus/scenes/PS1.gdshader" id="21_qihgq"]
-[ext_resource type="PackedScene" uid="uid://csxxt8u0xttln" path="res://Modelos/Escenarios/MONITOR.tscn" id="22_j3r38"]
 [ext_resource type="PackedScene" uid="uid://d1ejmrblu6naa" path="res://Modelos/Escenarios/Chair.tscn" id="23_s4ni3"]
 [ext_resource type="Texture2D" uid="uid://csqiwfnfdgqhl" path="res://Texturas/Metal054C_2K-JPG/Screenshot 2025-07-09 070925.png" id="27_dild1"]
+[ext_resource type="PackedScene" uid="uid://8v3qjfua3tbx" path="res://Modelos/Assets_SCIFI/y2k_old_desktop_setup__speakers_psx_low_poly.glb" id="27_nhuq7"]
 [ext_resource type="Script" uid="uid://equtbcoijbsv" path="res://Menus/scenes/lava_movible.gd" id="28_3hnhu"]
+[ext_resource type="PackedScene" uid="uid://qf1555v23gvh" path="res://Modelos/Assets_SCIFI/Prop_Mug.fbx" id="28_7innl"]
+[ext_resource type="PackedScene" uid="uid://ci6nvtbbywekh" path="res://Texturas/Mesita.tscn" id="28_61wdj"]
+[ext_resource type="PackedScene" uid="uid://bu23wfck1v78p" path="res://Texturas/tuberia.tscn" id="29_nhuq7"]
 [ext_resource type="Script" uid="uid://bp4tmww6koeah" path="res://Menus/scenes/llave_2.gd" id="30_pvd5o"]
+[ext_resource type="PackedScene" uid="uid://chq70rjtq0oi" path="res://Modelos/Espace/display-wall.glb" id="30_v64ag"]
 [ext_resource type="Script" uid="uid://dquqp4rjjgkqe" path="res://Menus/scenes/llave_3.gd" id="31_01i76"]
 [ext_resource type="Script" uid="uid://b1qp6rvyrtpwe" path="res://Menus/scenes/llave_4.gd" id="32_xxlgk"]
 [ext_resource type="Script" uid="uid://ds6chl62qy5om" path="res://Menus/scenes/llave_5.gd" id="33_hoxhe"]
 [ext_resource type="Script" uid="uid://dlpaov54gw5hr" path="res://Menus/scenes/area_3d_2.gd" id="34_nr4iu"]
+[ext_resource type="PackedScene" uid="uid://cwegcehttbo1x" path="res://Modelos/Espace/display-wall-wide.glb" id="35_b0l2m"]
+[ext_resource type="PackedScene" uid="uid://dlbcur3gdx78q" path="res://Texturas/enemy_eye_drone.tscn" id="36_7vutd"]
 [ext_resource type="AudioStream" uid="uid://bo0n13vrr8u6p" path="res://Audio/JDSherbert - Ambiences Music Pack - Underwater City.ogg" id="36_jh6wq"]
 [ext_resource type="AudioStream" uid="uid://beoq64tv5i8d1" path="res://Audio/JDSherbert - Ambiences Music Pack - Cosmic Star.ogg" id="37_68he8"]
+[ext_resource type="PackedScene" uid="uid://dm4baargi0k0g" path="res://Texturas/prop_crate_large.tscn" id="37_srmug"]
+[ext_resource type="PackedScene" uid="uid://dl4rcigkwfnr0" path="res://Texturas/prop_shelves_thin_tall.tscn" id="38_5d03e"]
+[ext_resource type="PackedScene" uid="uid://cn2yeehyhm3ae" path="res://Texturas/unet.tscn" id="39_h82cy"]
+[ext_resource type="Script" uid="uid://25npx2perwo2" path="res://Menus/scenes/label_3d.gd" id="40_732c3"]
+[ext_resource type="PackedScene" uid="uid://b0cxx2wv2qimm" path="res://Texturas/freasa.tscn" id="40_pgluk"]
+[ext_resource type="Texture2D" uid="uid://cvj6a4n677mtk" path="res://Texturas/CAPTURE.jpg" id="44_a6d3m"]
+[ext_resource type="PackedScene" uid="uid://xn3v8fruslcg" path="res://Texturas/chest.tscn" id="54_kxled"]
+[ext_resource type="PackedScene" uid="uid://ve5ldiquwow5" path="res://Texturas/minecraft_diamond-sword.glb" id="55_r4xui"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ni4o0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -277,7 +294,6 @@ subdivide_width = 15
 subdivide_depth = 15
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ny02h"]
-load_path = "res://.godot/imported/Metal053C_1K-JPG_Displacement.jpg-d0af33127664405e87b655690d6e61be.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmoy"]
 albedo_texture = ExtResource("14_dbw2q")
@@ -591,7 +607,8 @@ flip_faces = true
 size = Vector2(2, 2)
 
 [node name="Introduccion" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00386477, 4.76837e-07, 0.0145249)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.78151, -16.557, -13.5548)
+script = ExtResource("1_732c3")
 
 [node name="Transicion" parent="." instance=ExtResource("1_i7dk7")]
 
@@ -600,14 +617,14 @@ mouse_filter = 1
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
-light_energy = 0.0
+light_energy = 16.0
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3w63d")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(0.99993, 0.0118536, -0.000262365, -0.0118536, 0.998951, -0.0442383, -0.000262797, 0.0442383, 0.999021, -10.4983, 9.39286, -63.9562)
+transform = Transform3D(-0.107999, 0, -0.994151, 0, 1, 0, 0.994151, 0, -0.107999, -12.3529, 9.85557, -64.0667)
 script = ExtResource("2_ue5d1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
@@ -684,6 +701,12 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -2.092
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Escenario/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.41781, 1.6109, -5.5037)
 shape = SubResource("BoxShape3D_bbwif")
+
+[node name="3D RightArrow" parent="Escenario" instance=ExtResource("10_kenya")]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -17.2808, 4.90409, 103.67)
+
+[node name="3D RightArrow2" parent="Escenario" instance=ExtResource("10_kenya")]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, -6.83834, 10.5768, 64.3731)
 
 [node name="Tutorial" type="Node3D" parent="."]
 
@@ -908,6 +931,9 @@ material = SubResource("StandardMaterial3D_y7ljr")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="Tutorial/Terreno"]
 
+[node name="Sketchfab_Scene" parent="Tutorial/Terreno" instance=ExtResource("14_mxile")]
+transform = Transform3D(-0.00776457, 0, -0.0289778, -0.0289778, -1.31134e-09, 0.00776457, -1.26666e-09, 0.03, 3.394e-10, -15.9303, 8.08642, 62.2804)
+
 [node name="Activadores" type="Node3D" parent="Tutorial"]
 
 [node name="Activador_A" type="Area3D" parent="Tutorial/Activadores"]
@@ -1021,7 +1047,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.21436, 0.479065, 3.07548)
 shape = SubResource("BoxShape3D_huyde")
 
 [node name="Label3D3" type="Label3D" parent="Tutorial/Activadores"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6988, 12.4813, 40.0908)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6988, 9.25801, 40.0908)
 text = "Agachate pulsando la
 Rueda del Mouse!"
 font_size = 100
@@ -1172,19 +1198,24 @@ transform = Transform3D(5.96046e-08, -2.87413, 1.25632e-07, 2.46576e-15, -1.2563
 
 [node name="Luz14" type="OmniLight3D" parent="Escenario_A"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.03, 2.92797, 0.508972)
+light_energy = 5.172
+omni_range = 20.312
+
+[node name="Luz14" type="OmniLight3D" parent="Escenario_A/Luz14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.53657, -0.514279, -0.600594)
 light_energy = 100.0
 omni_range = 20.312
 
 [node name="Estructura" type="Node3D" parent="Escenario_A"]
 
 [node name="Piso Inicial" type="CSGBox3D" parent="Escenario_A/Estructura"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.371459, 0, 0.313736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.377197, 0, 0.308411)
 use_collision = true
 size = Vector3(11.4168, 1, 9.96146)
 material = SubResource("StandardMaterial3D_bpmoy")
 
 [node name="Techo Inicial" type="CSGBox3D" parent="Escenario_A/Estructura"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.371459, 6.46087, 0.313736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.362894, 6.45871, 0.309502)
 use_collision = true
 size = Vector3(11.4168, 1, 9.96146)
 material = SubResource("StandardMaterial3D_pesl6")
@@ -1196,7 +1227,7 @@ size = Vector3(0.953384, 6.67438, 9.96146)
 material = SubResource("StandardMaterial3D_5o6no")
 
 [node name="Pared Izquierda" type="CSGBox3D" parent="Escenario_A/Estructura"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62892, 2.83719, 0.313736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.62892, 2.83719, 0.312988)
 use_collision = true
 size = Vector3(0.953384, 6.67438, 9.96146)
 material = SubResource("StandardMaterial3D_wd2o7")
@@ -1285,22 +1316,74 @@ use_collision = true
 size = Vector3(0.953384, 1.48117, 4.42737)
 material = SubResource("StandardMaterial3D_vk75f")
 
-[node name="MONITOR" parent="Escenario_A" instance=ExtResource("22_j3r38")]
-transform = Transform3D(3.86697, 0, 0, 0, 3.86697, 0, 0, 0, 3.86697, -3.30621, 1.70439, 0)
+[node name="Prop_Mug" parent="Escenario_A/Estructura" instance=ExtResource("28_7innl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.94945, 1.74317, 1.14651)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Escenario_A"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.26521, 1.16348, -0.0103798)
+transform = Transform3D(0.507779, 0, 0, 0, 1, 0, 0, 0, 1.29657, -3.26521, 1.16348, -0.0103836)
+visible = false
 use_collision = true
 size = Vector3(2.37354, 1.15836, 2.70679)
 material = SubResource("StandardMaterial3D_081ai")
 
 [node name="Chair" parent="Escenario_A" instance=ExtResource("23_s4ni3")]
-transform = Transform3D(-0.292563, 0, -0.198938, 0, 0.353793, 0, 0.198938, 0, -0.292563, -1.47858, 0, -1.90868)
+transform = Transform3D(-0.348983, 0, -0.0581372, 0, 0.353793, 0, 0.0581372, 0, -0.348983, -0.49369, 0, -0.397652)
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Escenario_A"]
-transform = Transform3D(1, 0, 0, 0, -0.00280992, 0.999996, 0, -0.999996, -0.00280992, -3.29698, 2.58963, -0.0763054)
-size = Vector3(0.843539, 0.759216, 0.567627)
+[node name="Computadora" parent="Escenario_A" instance=ExtResource("27_nhuq7")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -6.85945, 1.70377, 3.9228)
+
+[node name="Textura_Juego" type="CSGBox3D" parent="Escenario_A/Computadora"]
+transform = Transform3D(-2.18557e-08, 0.499998, 0.00140496, 0, -0.00140496, 0.499998, 0.5, 2.18556e-08, 6.14128e-11, 2.00467, 0.371793, 1.63807)
+size = Vector3(0.0204551, 0.859726, 0.79892)
 material = SubResource("StandardMaterial3D_61wdj")
+
+[node name="Prop_Desk_Small2" parent="Escenario_A" instance=ExtResource("28_61wdj")]
+transform = Transform3D(-8.8414e-10, 0, 0.0220358, 0, 0.01, 0, -0.0202268, 0, -9.63213e-10, -3.36763, 0.801088, -0.322144)
+
+[node name="pipe-bend2" parent="Escenario_A" instance=ExtResource("29_nhuq7")]
+transform = Transform3D(3.55271e-15, 0, -3, 3, -1.31134e-07, 0, -1.31134e-07, -3, 0, -3.53997, 4.96069, 5.23025)
+
+[node name="pipe-bend2" parent="Escenario_A/pipe-bend2" instance=ExtResource("29_nhuq7")]
+transform = Transform3D(-1.06581e-14, -1, -6.64764e-15, 1, -1.06581e-14, -4.37114e-08, 4.37114e-08, -1.18424e-15, 1, 0.406647, 2.88293, -2.52712)
+
+[node name="pipe-bend2" parent="Escenario_A/pipe-bend2/pipe-bend2" instance=ExtResource("29_nhuq7")]
+transform = Transform3D(1, -4.37114e-08, -2.13163e-14, 2.13163e-14, -8.74228e-08, 1, -4.37114e-08, -1, -8.74229e-08, -0.0212936, 0.32177, 2.83149)
+
+[node name="display-wall2" parent="Escenario_A" instance=ExtResource("30_v64ag")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.35904, 3.65824, -0.0704803)
+
+[node name="display-wall-wide2" parent="Escenario_A" instance=ExtResource("35_b0l2m")]
+transform = Transform3D(-10.2943, 0, -8.71888e-08, 0, 0.997322, 0, 8.9996e-07, 0, -0.997323, 0.375904, -2.1255, 51.691)
+
+[node name="Enemy_EyeDrone3" parent="Escenario_A" instance=ExtResource("36_7vutd")]
+transform = Transform3D(1.57853e-06, 0, -1, 0, 0.496692, 0, 26.4833, 0, 5.96047e-08, 2.94664, 1.68172, 19.0742)
+
+[node name="Enemy_EyeDrone" parent="Escenario_A" instance=ExtResource("36_7vutd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 34.4268, -2.43806, 1.7649, 23.5225)
+
+[node name="Prop_Crate_Large" parent="Escenario_A" instance=ExtResource("37_srmug")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.62061, 0.503292, -2.69125)
+
+[node name="Prop_Crate_Large2" parent="Escenario_A/Prop_Crate_Large" instance=ExtResource("37_srmug")]
+transform = Transform3D(-8.74228e-08, -4.37114e-08, 1, 1, -4.37114e-08, 8.74228e-08, 4.37114e-08, 1, 4.37114e-08, -6.9563, 1.72679, -1.13516)
+
+[node name="Prop_Shelves_ThinTall" parent="Escenario_A" instance=ExtResource("38_5d03e")]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, -3.20113, 0.323183, 4.52197)
+
+[node name="base" parent="Escenario_A" instance=ExtResource("39_h82cy")]
+transform = Transform3D(0.774569, 0, 0.632489, 0, 1, 0, -0.632489, 0, 0.774569, 4.72174, 1.6053, -2.89427)
+
+[node name="base" parent="Escenario_A/base" instance=ExtResource("39_h82cy")]
+transform = Transform3D(0.774569, 0, 0.632489, 0, 1, 0, -0.632489, 0, 0.774569, 1.56031, -0.408959, 3.33823)
+
+[node name="base2" parent="Escenario_A/base" instance=ExtResource("39_h82cy")]
+transform = Transform3D(-1.34083, 0, -1.48398, 0, 2, 0, 1.48398, 0, -1.34083, -71.4461, 1.92248, 79.9008)
+
+[node name="fraise_finale" parent="Escenario_A" instance=ExtResource("40_pgluk")]
+transform = Transform3D(-2.62268e-07, 0, 6, 0, 6, 0, -6, 0, -2.62268e-07, -4.90273, 6.65533, 73.6809)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Escenario_A/fraise_finale"]
+light_energy = 3.909
 
 [node name="Escenario_B" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.3351, 0, 117.57)
@@ -1570,6 +1653,12 @@ offset_right = 1165.0
 offset_bottom = 661.0
 color = Color(0.784314, 0.113725, 0.145098, 0.364706)
 
+[node name="TimerLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+
 [node name="Post-Procesado" type="MeshInstance3D" parent="."]
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_5qps2")
@@ -1577,8 +1666,9 @@ mesh = SubResource("QuadMesh_5qps2")
 [node name="Lore" type="Node3D" parent="."]
 
 [node name="Label3D" type="Label3D" parent="Lore"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12.8427, 10.9886, -64.1098)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.0029, 10.9639, -64.1098)
 text = "Tal vez ganaste esta vez..."
+script = ExtResource("40_732c3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Lore"]
 
@@ -1601,6 +1691,19 @@ autoplay = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0149, 4.92667, 117.511)
 stream = ExtResource("37_68he8")
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Telon" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("44_a6d3m")
+
+[node name="chest" parent="." instance=ExtResource("54_kxled")]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -11.2999, 2.02177, 93.8639)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("55_r4xui")]
+transform = Transform3D(-4.37114e-09, -0.1, 0, -0.0258819, 1.13133e-09, 0.0965926, -0.0965926, 4.2222e-09, -0.0258819, -4.99779, 6.16064, 63.5598)
 
 [connection signal="pressed" from="Pausa/Control/Button" to="Pausa" method="_on_button_pressed"]
 [connection signal="body_entered" from="Tutorial/Activadores/Activador_A" to="Tutorial/Activadores/Activador_A" method="_on_body_entered"]

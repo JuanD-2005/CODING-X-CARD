@@ -1,19 +1,31 @@
 extends Node3D
 
-@onready var hit_rect = $UI/HitRect
+@onready var muro_negro: MeshInstance3D = $Player/Head/Camera3D/MeshInstance3D
+@onready var jugador: Node3D = $Player
+const TEXTO_FLOTANTE = preload("res://Extras/Texto_Flotante.tscn")
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	if muro_negro:
+		print("¡Muro físico detectado! Iniciando demolición controlada...")
+		var tween = create_tween()
+		
+		# Animamos la propiedad 'transparency' del nodo (0.0 a 1.0)
+		tween.tween_property(muro_negro, "transparency", 1.0, 1.5).set_ease(Tween.EASE_IN_OUT)
+		
+		# Destruimos el muro y llamamos al texto
+		tween.tween_callback(muro_negro.queue_free)
+		tween.tween_callback(arrancar_fase_accion)
+	else:
+		print("ERROR: No se encontró el muro físico.")
+		arrancar_fase_accion()
 
+func arrancar_fase_accion() -> void:
+	var texto_inicio = TEXTO_FLOTANTE.instantiate()
+	add_child(texto_inicio)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	var label = texto_inicio.get_node_or_null("Label3D")
+	if label:
+		label.text = "!FASE DE ACCION!"
 
-
-func _on_player_player_hit() -> void:
-	hit_rect.visible = true
-	await get_tree().create_timer(0.2).timeout
-	hit_rect.visible = false 
-	
+	if jugador:
+		texto_inicio.global_position = jugador.global_position + Vector3(0, 2.5, 0)

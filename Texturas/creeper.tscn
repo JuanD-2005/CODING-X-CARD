@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://u1k5m5lq7cpf"]
+
+[ext_resource type="PackedScene" uid="uid://bjw2a1fqapxo4" path="res://Modelos/Creeper.fbx" id="1_j0ti3"]
+[ext_resource type="Texture2D" uid="uid://crke3x11or6n7" path="res://Texturas/creeper.png" id="2_qh7do"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dkqnd"]
+albedo_texture = ExtResource("2_qh7do")
+
+[node name="Creeper" instance=ExtResource("1_j0ti3")]
+
+[node name="Head2" parent="Armature/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")
+
+[node name="Body" parent="Armature/Skeleton3D" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")
+
+[node name="FRLeg2" parent="Armature/Skeleton3D" index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")
+
+[node name="FLLeg2" parent="Armature/Skeleton3D" index="3"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")
+
+[node name="BLLeg2" parent="Armature/Skeleton3D" index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")
+
+[node name="BRLeg2" parent="Armature/Skeleton3D" index="5"]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkqnd")

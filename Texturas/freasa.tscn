@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0cxx2wv2qimm"]
+
+[ext_resource type="PackedScene" uid="uid://cub6r8ac2jg8q" path="res://Modelos/fraise_finale.fbx" id="1_f8jts"]
+[ext_resource type="Texture2D" uid="uid://ilbhqgdoa2by" path="res://Texturas/fraise_text03.png" id="2_nhslt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j48io"]
+albedo_texture = ExtResource("2_nhslt")
+
+[node name="fraise_finale" instance=ExtResource("1_f8jts")]
+
+[node name="fraise_finale" parent="." index="0"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.0051643, 0.0349475, -0.0391774)
+material_override = SubResource("StandardMaterial3D_j48io")
