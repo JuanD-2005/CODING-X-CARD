@@ -6,6 +6,7 @@ const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.007
+const CONTROLLER_LOOK_SENSITIVITY = 4
 const WALL_JUMP_FORCE = 7.0 # Fuerza del salto en la pared
 const WALL_SLIDE_GRAVITY = 1.0 # Gravedad reducida al deslizarse por la pared
 const HIT_STAGGER = 8.0
@@ -56,6 +57,16 @@ func _unhandled_input(event):
 		_toggle_crouch()
 
 func _physics_process(delta: float) -> void:
+	# --- CÁMARA CON JOYSTICK DERECHO ---
+	var cam_x = Input.get_axis("camara_izquierda", "camara_derecha")
+	var cam_y = Input.get_axis("camara_arriba", "camara_abajo")
+
+	if abs(cam_x) > 0.1:
+		head.rotate_y(-cam_x * CONTROLLER_LOOK_SENSITIVITY * delta)
+	if abs(cam_y) > 0.1:
+		camera.rotate_x(-cam_y * CONTROLLER_LOOK_SENSITIVITY * delta)
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-10), deg_to_rad(68))
+
 	# Add the gravity.
 	if not is_on_floor():
 		if is_on_wall_only():
@@ -87,9 +98,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		speed = WALK_SPEED
 
-	# Get the input direction and handle the movement/deceleration.
+	# --- MOVIMIENTO: teclado Y joystick izquierdo juntos ---
 	var input_dir := Input.get_vector("izquierda", "derecha", "arriba", "abajo")
-	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction = (head.global_transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
 		if direction:
 			velocity.x = direction.x * speed
@@ -101,7 +112,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)
 	
-	 # Animación de las manos
+	# Animación de las manos
 	t_hand_sway += delta * velocity.length() * float(is_on_floor())
 	_animate_hands(t_hand_sway)
 	

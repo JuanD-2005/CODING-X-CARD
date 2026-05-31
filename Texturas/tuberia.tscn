@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu23wfck1v78p"]
+
+[ext_resource type="PackedScene" uid="uid://bdur3klbptq1j" path="res://Modelos/Espace/pipe-bend.glb" id="1_6lfj3"]
+[ext_resource type="Material" uid="uid://ib7ilvldgel4" path="res://Texturas/MESA.tres" id="2_1uqo0"]
+
+[node name="pipe-bend2" instance=ExtResource("1_6lfj3")]
+
+[node name="pipe-bend" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_1uqo0")

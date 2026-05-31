@@ -6,7 +6,7 @@ func _on_body_entered(body: Node3D) -> void:
 		transition_rect.visible = true  # Hacer visible el ColorRect
 		transition(true)
 		await get_tree().create_timer(0.5).timeout  # Espera el efecto
-		body.set_global_position(Vector3(-11.54467, 4.67585, 106.2402))
+		body.set_global_position(Vector3(-17, -7, 90.958))
 		transition(false)
 		await get_tree().create_timer(0.5).timeout  # Espera el desvanecimiento
 		

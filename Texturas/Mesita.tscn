@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci6nvtbbywekh"]
+
+[ext_resource type="PackedScene" uid="uid://d2eyjw65v8rp1" path="res://Modelos/Assets_SCIFI/Prop_Desk_Small.glb" id="1_e53ef"]
+[ext_resource type="Material" uid="uid://ib7ilvldgel4" path="res://Texturas/MESA.tres" id="2_igs0g"]
+
+[node name="Prop_Desk_Small2" instance=ExtResource("1_e53ef")]
+
+[node name="Prop_Desk_Small" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_igs0g")
+surface_material_override/1 = ExtResource("2_igs0g")
+surface_material_override/2 = ExtResource("2_igs0g")

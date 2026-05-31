@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn2yeehyhm3ae"]
+
+[ext_resource type="PackedScene" uid="uid://dnfprxibljeu8" path="res://Texturas/base.fbx" id="1_dj22u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikhxo"]
+albedo_color = Color(0.0745098, 0.239216, 0.529412, 1)
+metallic = 0.34
+roughness = 0.3
+
+[node name="base" instance=ExtResource("1_dj22u")]
+
+[node name="model" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ikhxo")

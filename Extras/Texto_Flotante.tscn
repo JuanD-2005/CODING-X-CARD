@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdcvyj8d4ltt2"]
+
+[ext_resource type="Script" uid="uid://bne0ehljil5tl" path="res://Extras/label_3d.gd" id="1_td3p2"]
+
+[node name="TextoFlotante" type="Node3D"]
+
+[node name="Label3D" type="Label3D" parent="."]
+billboard = 1
+script = ExtResource("1_td3p2")
