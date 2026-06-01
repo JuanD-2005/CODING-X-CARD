@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/assets/banner.ogv" alt="Coding X Card Banner" width="100%">
+<img src=".github/assets/banner.gif" alt="Coding X Card Banner" width="100%">
 
 <br/>
 
