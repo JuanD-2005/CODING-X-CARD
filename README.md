@@ -27,7 +27,7 @@
 
 > 📝 **Contexto del Proyecto**
 >
-> Este juego nació como el proyecto final para la materia de **Programación II**. Fue desarrollado en un *sprint* intensivo de aproximadamente dos semanas.
+> Este juego nació como el proyecto final para la materia de **Programación II**. Después de un proceso de autoaprendizaje, se realizó un *sprint* intensivo de 5 días donde se desarrolló todo al límite para la feria a primera hora.
 > La única premisa impuesta desde el inicio fue clara: **hacer algo diferente, que no sea lo que aparenta a primera vista.**
 
 ---
@@ -120,7 +120,7 @@ git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
 
 > 📝 **Project Context**
 >
-> This game was built as the final project for a **Programming II** course. It was developed in an intensive sprint of roughly two weeks.
+> This game was built as the final project for a **Programming II** course. After a self-learning process, it was developed in an intensive 5-day sprint, pushing everything to the limit to be ready for the fair first thing in the morning.
 > The only requirement set from the start was clear: **make something different — something that isn't what it appears to be.**
 
 ---
