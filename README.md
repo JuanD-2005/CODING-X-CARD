@@ -112,7 +112,6 @@ git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
 ```
 
 ---
----
 
 <a name="english"></a>
 
@@ -205,7 +204,7 @@ git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
 ```
 
 ---
----
+
 
 <div align="center">
 
