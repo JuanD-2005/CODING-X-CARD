@@ -4,6 +4,211 @@
 
 <br/>
 
+> *"Lo que parece un simple juego de cartas... nunca lo fue."*
+
+<br/>
+
+[![Godot 4.4](https://img.shields.io/badge/Godot-4.4-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white)](https://godotengine.org/)
+[![GDScript](https://img.shields.io/badge/GDScript-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/)
+[![UNET](https://img.shields.io/badge/Proyecto_Académico-UNET-8B0000?style=for-the-badge)](https://www.unet.edu.ve/)
+[![Certificado](https://img.shields.io/badge/🏆-PREMIADO-FFD700?style=for-the-badge)]()
+
+<br/>
+
+**[Español](#español) · [English](#english)**
+
+</div>
+
+---
+
+<a name="español"></a>
+
+## Español
+
+> 📝 **Contexto del Proyecto**
+>
+> Este juego nació como el proyecto final para la materia de **Programación II**. Fue desarrollado en un *sprint* intensivo de aproximadamente dos semanas.
+> La única premisa impuesta desde el inicio fue clara: **hacer algo diferente, que no sea lo que aparenta a primera vista.**
+
+---
+
+### 🏆 Reconocimientos
+
+Gracias al esfuerzo invertido en ese sprint, el proyecto logró destacar más allá del aula y recibió reconocimiento formal en eventos académicos locales:
+
+| Insignia | Evento | Aval | Categoría |
+|:---:|:---|:---|:---|
+| 🥇 | Festival de Ciencias | UNET × Fundacite | Innovación en Software |
+| 🏅 | Expo-Festival de Proyectos — CEDIC | UNET + instituciones de toda la ciudad | Desarrollo de Videojuegos |
+
+---
+
+### 🛠️ Tecnologías
+
+- **Motor:** Godot Engine 4.4 (GL Compatibility)
+- **Lenguaje:** GDScript
+- **Assets:** Sprites 2D · Modelos 3D · Audio original · Shaders GLSL
+- **Control de versiones:** Git + GitHub
+
+---
+
+### 📂 Estructura del Repositorio
+
+```text
+Coding-X-Card/
+│
+├── 🎵 Audio/         ← Música y SFX
+├── 🎬 Escenas/       ← Nivel principal, flujo de juego y transiciones
+├── 📦 Extras/        ← Recursos complementarios y documentación interna
+├── 🖥️  Menus/         ← UI completa: menú principal, pausa, game over
+├── 🧊 Modelos/       ← Assets 3D del entorno
+├── 🔤 rainyhearts/   ← Tipografía
+├── 🧩 Scenes/        ← Escenas reutilizables y prefabs
+├── 📜 Scripts/       ← Lógica escrita en GDScript
+├── 🌀 Shaders/       ← Shaders personalizados
+├── 🃏 Sprites/       ← Gráficos 2D (cartas y UI)
+├── 🗺️  Texturas/      ← Materiales del mundo 3D
+└── ⚙️  project.godot  ← Configuración raíz del motor
+```
+
+> Los directorios `.godot/`, `.import` y los archivos `.uid` son generados automáticamente por Godot.
+
+---
+
+### 🚀 Puesta en Marcha
+
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
+
+# 2. Abre Godot Engine 4.4 o superior
+# 3. Importa el proyecto seleccionando el archivo project.godot
+# 4. Presiona ▶ Play (o F5)
+```
+
+> **Requisito:** Godot 4.4+. No requiere plugins externos ni dependencias adicionales.
+
+---
+
+### 🎮 Controles
+
+| Acción | Teclado / Ratón | Mando / Gamepad |
+|:---|:---:|:---:|
+| Moverse | `W` `A` `S` `D` | Joystick Izquierdo |
+| Saltar | `Espacio` | A / Equis |
+| Sprint | `Shift` | LB / L1 |
+| Interactuar | `E` | X / Cuadrado |
+| Pausa | `Esc` | Start / Options |
+| Seleccionar carta | `Click Izquierdo` | A / Gatillos |
+
+---
+
+### 📍 Estado
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  85%  — En desarrollo activo.
+                              Mecánicas, atmósfera y pulido en refinamiento continuo.
+                              La visión está clara. El resultado, cada vez más cerca.
+```
+
+---
+---
+
+<a name="english"></a>
+
+## English
+
+> 📝 **Project Context**
+>
+> This game was built as the final project for a **Programming II** course. It was developed in an intensive sprint of roughly two weeks.
+> The only requirement set from the start was clear: **make something different — something that isn't what it appears to be.**
+
+---
+
+### 🏆 Awards & Recognition
+
+The effort put into that sprint paid off beyond the classroom. The project received formal recognition at two local academic events:
+
+| Badge | Event | Institution | Category |
+|:---:|:---|:---|:---|
+| 🥇 | Science Festival | UNET × Fundacite | Software Innovation |
+| 🏅 | Project Expo-Festival — CEDIC | UNET + institutions across the city | Video Game Development |
+
+---
+
+### 🛠️ Tech Stack
+
+- **Engine:** Godot Engine 4.4 (GL Compatibility)
+- **Language:** GDScript
+- **Assets:** 2D Sprites · 3D Models · Original Audio · GLSL Shaders
+- **Version Control:** Git + GitHub
+
+---
+
+### 📂 Repository Structure
+
+```text
+Coding-X-Card/
+│
+├── 🎵 Audio/         ← Music and SFX
+├── 🎬 Escenas/       ← Main level, game flow and transitions
+├── 📦 Extras/        ← Additional resources and internal docs
+├── 🖥️  Menus/         ← Full UI: main menu, pause, game over
+├── 🧊 Modelos/       ← 3D assets for the environment
+├── 🔤 rainyhearts/   ← Custom typography
+├── 🧩 Scenes/        ← Reusable scenes and prefabs
+├── 📜 Scripts/       ← Game logic written in GDScript
+├── 🌀 Shaders/       ← Custom shaders
+├── 🃏 Sprites/       ← 2D graphics (cards and UI)
+├── 🗺️  Texturas/      ← Materials for the 3D world
+└── ⚙️  project.godot  ← Engine root configuration
+```
+
+> `.godot/`, `.import` directories and `.uid` files are auto-generated by Godot. Leave them alone.
+
+---
+
+### 🚀 Getting Started
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
+
+# 2. Open Godot Engine 4.4 or newer
+# 3. Import the project by selecting project.godot
+# 4. Press ▶ Play (or F5)
+```
+
+> **Requirement:** Godot 4.4+. No external plugins or additional dependencies needed.
+
+---
+
+### 🎮 Controls
+
+| Action | Keyboard / Mouse | Controller / Gamepad |
+|:---|:---:|:---:|
+| Move | `W` `A` `S` `D` | Left Joystick |
+| Jump | `Space` | A / Cross |
+| Sprint | `Shift` | LB / L1 |
+| Interact | `E` | X / Square |
+| Pause | `Esc` | Start / Options |
+| Select card | `Left Click` | A / Triggers |
+
+---
+
+### 📍 Status
+
+```
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  85%  — Actively in development.
+                              Mechanics, atmosphere and visual polish being refined.
+                              The vision is clear. The result is getting closer.
+```
+
+---
+---
+
+<div align="center">
+
 ```
 ╔══════════════════════════════════════════════════════════╗
 ║                                                          ║
@@ -20,178 +225,18 @@
 ║   ██╔██╗    ██║   ██║██╔══██║██╔══██╗██║  ██║            ║
 ║  ██╔╝ ██╗   ╚██████╔╝██║  ██║██║  ██║██████╔╝            ║
 ║  ╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝             ║
+║                                                          ║                            
+║        JuanD-2005     ·     JoseABravoD                  ║ 
+║                                                          ║        
+║            github.com/JuanD-2005                         ║    
+║            github.com/JoseABravoD                        ║                                 
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
-*"Lo que parece un simple juego de cartas... nunca lo fue."*
-
-</div>
-
----
-
-> ⚠️ **ADVERTENCIA** ⚠️
->
-> Este proyecto no es un demo técnico ni un ejercicio de facultad cualquiera.
-> Fue concebido, desarrollado y pulido hasta obtener **dos reconocimientos formales**.
-> Cada línea de código, cada textura y cada sonido tienen un propósito:
-> **HACER QUE EL JUGADOR DUDE DE LA REALIDAD.**
-
----
-
-## 🏆 Certificaciones Oficiales
-
-| Insignia | Evento | Aval | Categoría |
-|:---:|:---|:---|:---|
-| 🥇 | Festival de Ciencias | UNET × Fundacite | Innovación en Software |
-| 🏅 | Expo-Festival de Proyectos — CEDIC | UNET + instituciones de toda la ciudad | Desarrollo de Videojuego |
-
-> Dos certificados no mienten. Este proyecto dejó huella antes de salir al mundo.
-
----
-
-## 🜁 La Premisa
-
-Al principio todo es familiar. Un tablero. Cartas. Turnos. Estrategia.
-
-Te sientes seguro.
-
-Pero la partida se tuerce. La pantalla se fractura. Las reglas colapsan. Y cuando abres los ojos ya no hay mesa, ni mazo, ni rival frente a ti. Solo un escenario tridimensional, abandonado, cargado de una atmósfera que pesa.
-
-**No es un error. Es el diseño.**
-
-Coding X Card es un experimento que rompe la cuarta pared del género: un mismo ejecutable que te arrastra desde un juego de cartas 2D hasta una experiencia de exploración en primera persona. El cambio de paradigma no es un menú ni una cinemática: es la mecánica central.
-
-- **Fase 1** — Lo conocido. Lo cómodo. La calma antes del abismo.
-- **Fase 2** — El despertar. Nadie te avisó que esto iba a pasar.
-
----
-
-## 🕳️ El Descenso
-
-```
-┌──────────────────────────────────────────────────────┐
-│                                                      │
-│    [ FASE 1 ]  Juego de cartas 2D por turnos         │
-│                      │                               │
-│                      ▼  algo se quiebra              │
-│                      │                               │
-│    [ FASE 2 ]  Entorno 3D. Abandonado. Tétrico.      │
-│                      │                               │
-│                      ▼  el escape es la única ruta   │
-│                      │                               │
-│    [ VICTORIA ]      o      [ ¿HAY ALGO MÁS? ]       │
-│                                                      │
-└──────────────────────────────────────────────────────┘
-```
-
-La transición no está escondida en un nivel secreto: ocurre frente a tus ojos, sin aviso, como un bug que en realidad es la puerta de entrada al horror. El jugador no elige cambiar de fase: **la fase lo elige a él.**
-
----
-
-## 💀 Lo que lo hace Brutal
-
-| Elemento | Por qué importa |
-|:---|:---|
-| **El Giro** | No hay botón de "siguiente nivel": la ruptura 2D → 3D es narrativa, visual y mecánica |
-| **Motor de cartas propio** | Lógica de turnos, reglas y condiciones de victoria escritas desde cero en GDScript |
-| **Exploración en primera persona** | Movimiento fluido con salto, sprint e interacción con objetos en un mundo decadente |
-| **Dirección de arte única** | Shaders personalizados, iluminación tétrica, menús animados y diseño sonoro original |
-| **Arquitectura limpia** | Escenas, scripts, shaders y assets 100% desacoplados. Modular por necesidad, no por moda |
-
-> No estás solo. Y lo que habita aquí no juega a las cartas.
-
----
-
-## 🛠️ Arsenal Técnico
-
-- **Motor:** Godot Engine 4.4 (GL Compatibility)
-- **Lenguaje:** GDScript
-- **Assets:** Sprites 2D · Modelos 3D · Audio original · Shaders GLSL
-- **Control de versiones:** Git + GitHub
-
-Cada herramienta fue elegida para servir al concepto, no al revés. Godot 4.4 proporciona el renderizado necesario para que el quiebre visual sea creíble, y GDScript permite iterar rápido sobre las mecánicas sin sacrificar control.
-
----
-
-## 📂 Anatomía del Repositorio
-
-```
-Coding-X-Card/
-│
-├── 🎵 Audio/         ← Música y SFX que construyen la atmósfera
-├── 🎬 Escenas/       ← Nivel principal, flujo de juego y transiciones
-├── 📦 Extras/        ← Recursos complementarios y documentación interna
-├── 🖥️  Menus/         ← UI completa: menú principal, pausa, game over
-├── 🧊 Modelos/       ← Assets 3D del entorno tétrico
-├── 🔤 rainyhearts/   ← Tipografía personalizada
-├── 🧩 Scenes/        ← Escenas reutilizables y prefabs
-├── 📜 Scrips/        ← Toda la lógica escrita en GDScript
-├── 🌀 Shaders/       ← Shaders personalizados para efectos visuales
-├── 🃏 Sprites/       ← Gráficos 2D (cartas, iconos, texturas de UI)
-├── 🗺️  Texturas/      ← Materiales y texturas del mundo 3D
-└── ⚙️  project.godot  ← Configuración raíz del motor
-```
-
-> Los directorios `.godot/`, `.import` y los archivos `.uid` son generados automáticamente. No los toques.
-
----
-
-## 🚀 Puesta en Marcha
-
-```bash
-# 1. Clona el repositorio
-git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
-
-# 2. Abre Godot Engine 4.4 o superior
-# 3. Importa el proyecto seleccionando el archivo project.godot
-# 4. Presiona ▶ Play (o F5)
-```
-
-> **Requisito:** Godot 4.4+. No requiere plugins externos ni dependencias adicionales.
-
----
-
-## 🎮 Controles
-
-| Acción | Tecla / Botón |
-|:---|:---:|
-| Moverse | `W` `A` `S` `D` |
-| Saltar | `Espacio` |
-| Sprint | `Shift` |
-| Interactuar | `E` |
-| Pausa | `Esc` |
-| Seleccionar carta | `Click Izquierdo` |
-
----
-
-## 📍 Estado
-
-```
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  85 %   — En desarrollo activo.
-                             Mecánicas, atmósfera y pulido en refinamiento continuo.
-                             La visión está clara. El resultado, cada vez más cerca.
-```
-
----
-
-<div align="center">
-
-```
-        ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        █                                            █
-        █   DESARROLLADO CON OBSESIÓN, CARTAS Y CAFÉ █
-        █                                            █
-        █      JuanD-2005     ·     JoseABravoD      █
-        █                                            █
-        █   github.com/JuanD-2005                    █
-        █   github.com/JoseABravoD                   █
-        █                                            █
-        ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-```
-
 *¿Cartas o exploración? Estrategia o terror. Orden o caos.*
+*Cards or exploration? Strategy or horror. Order or chaos.*
 
-**Aquí no eliges. Aquí sobrevives.**
+**Aquí no eliges. Aquí sobrevives. — Here you don't choose. Here you survive.**
 
 </div>
