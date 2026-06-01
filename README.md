@@ -225,11 +225,11 @@ git clone https://github.com/JuanD-2005/CARD-POCALIPSIS.git
 ║   ██╔██╗    ██║   ██║██╔══██║██╔══██╗██║  ██║            ║
 ║  ██╔╝ ██╗   ╚██████╔╝██║  ██║██║  ██║██████╔╝            ║
 ║  ╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝             ║
-║                                                          ║                            
-║        JuanD-2005     ·     JoseABravoD                  ║ 
-║                                                          ║        
-║            github.com/JuanD-2005                         ║    
-║            github.com/JoseABravoD                        ║                                 
+║                                                          ║
+║             JuanD-2005     ·     JoseABravoD             ║
+║                                                          ║
+║                  github.com/JuanD-2005                   ║
+║                  github.com/JoseABravoD                  ║
 ║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
